@@ -832,6 +832,7 @@
     .procedure:nth-child(6)::after { content: "06"; }
     .procedure:nth-child(7)::after { content: "07"; }
     .procedure:nth-child(8)::after { content: "08"; }
+    .procedure:nth-child(9)::after { content: "09"; }
     .proc-trigger {
       min-height: 184px;
       display: grid;
@@ -1445,7 +1446,7 @@
       <button class="clear-search" id="clearSearch" type="button">Xóa</button>
     </label>
     <section class="quick-nav" aria-labelledby="quickTitle">
-      <h2 class="quick-title" id="quickTitle">Tìm nhanh 08 thủ tục</h2>
+      <h2 class="quick-title" id="quickTitle">Tìm nhanh 09 thủ tục</h2>
       <div class="quick-scroll" aria-label="Danh sách thủ tục">
         <button class="quick-chip" type="button" data-target="procedure-1">Đăng ký xe mô tô</button>
         <button class="quick-chip" type="button" data-target="procedure-2">VNeID Mức 2</button>
@@ -1455,6 +1456,7 @@
         <button class="quick-chip" type="button" data-target="procedure-6">Thu hồi đăng ký xe</button>
         <button class="quick-chip" type="button" data-target="procedure-7">Xác nhận cư trú</button>
         <button class="quick-chip" type="button" data-target="procedure-8">Cấp thẻ Căn cước</button>
+        <button class="quick-chip" type="button" data-target="procedure-9">Định danh tổ chức</button>
       </div>
       <button class="schedule-trigger" id="scheduleTrigger" type="button" aria-controls="schedulePage">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>
@@ -1467,7 +1469,7 @@
     <section aria-labelledby="procedureTitle">
       <div class="section-heading">
         <h2 id="procedureTitle">Thủ tục trọng tâm</h2>
-        <span class="count" id="resultCount">8 thủ tục</span>
+        <span class="count" id="resultCount">9 thủ tục</span>
       </div>
       <div class="procedures" id="procedureList">
 
@@ -1597,6 +1599,22 @@
             <div class="deadline"><strong>Thời hạn giải quyết:</strong> Không quá 07 ngày làm việc kể từ ngày nhận đủ hồ sơ. Trường hợp cấp lại do mất hoặc hư hỏng thực hiện qua dịch vụ công trực tuyến toàn trình: không quá 05 ngày làm việc.</div>
           </div></div>
         </article>
+
+        <article class="procedure" id="procedure-9" data-search="đăng ký tài khoản định danh điện tử tổ chức cơ quan doanh nghiệp người đại diện pháp luật ủy quyền mã số doanh nghiệp mã số thuế mã số tổ chức chữ ký số token vneid cổng dịch vụ công">
+          <button type="button" class="proc-trigger" aria-haspopup="dialog" aria-controls="procedureDialog">
+            <span class="proc-num" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 21V7l8-4 8 4v14M8 21v-4h8v4M8 9h2M14 9h2M8 13h2M14 13h2"/><path d="M2 21h20"/></svg></span><span><span class="proc-title">Đăng ký định danh tổ chức</span><span class="proc-summary">Đăng ký tài khoản định danh điện tử cho cơ quan, tổ chức, doanh nghiệp.</span></span>
+            <span class="chev" aria-hidden="true">▶</span>
+          </button>
+          <div class="proc-panel" id="p9"><div class="proc-body">
+            <p class="intro">Đăng ký tài khoản định danh điện tử cho cơ quan, tổ chức, doanh nghiệp.</p>
+            <div class="detail-grid">
+              <div class="detail-block"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6h11M8 12h11M8 18h11"></path><path d="m3 6 1 1 2-2m-3 7 1 1 2-2m-3 7 1 1 2-2"></path></svg>Điều kiện &amp; yêu cầu chuẩn bị</h3><ul class="clean-list"><li><strong>Người thực hiện:</strong> Người đại diện theo pháp luật hoặc người đại diện theo ủy quyền của tổ chức/doanh nghiệp.</li><li><strong>Điều kiện bắt buộc:</strong> Người đại diện phải đã có tài khoản định danh điện tử cá nhân Mức độ 2 trên ứng dụng VNeID.</li><li><strong>Thông tin cần chuẩn bị:</strong> Mã số doanh nghiệp, mã số thuế hoặc mã số tổ chức.</li><li>Thông tin, giấy tờ chứng minh người đại diện theo pháp luật nếu thông tin chưa khớp hoặc chưa cập nhật trong Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp.</li><li>Văn bản ủy quyền hợp pháp và giấy tờ tùy thân của người được ủy quyền nếu người thực hiện là người được ủy quyền.</li></ul></div>
+              <div class="detail-block" data-guide-target><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>Cách đăng ký</h3><ol class="steps"><li><strong>Đăng ký trực tiếp tại Cơ quan Công an:</strong> Áp dụng cho mọi loại hình cơ quan, tổ chức, doanh nghiệp.</li><li><strong>Đăng ký trực tuyến qua VNeID / Cổng dịch vụ công:</strong> Khuyên dùng cho doanh nghiệp đã có chữ ký số hoặc Token.</li></ol></div>
+            </div>
+            <div class="deadline"><strong>Thời hạn giải quyết:</strong> Không quá 03 ngày làm việc kể từ khi cơ quan Công an nhận đủ hồ sơ hợp lệ.</div>
+            <div class="notice"><strong>Kích hoạt tài khoản:</strong> Sau khi có thông báo phê duyệt qua SMS/Email, người đại diện sử dụng ứng dụng VNeID để đăng nhập và thực hiện kích hoạt tài khoản định danh cho tổ chức.</div>
+          </div></div>
+        </article>
       </div>
       <div class="empty-state" id="emptyState">Không tìm thấy thủ tục phù hợp. Thử từ khóa khác như “cư trú”, “xe máy” hoặc “VNeID”.</div>
     </section>
@@ -1649,7 +1667,6 @@
             </span>
             <svg class="official-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
           </a>
-
         </article>
       </div>
     </section>
